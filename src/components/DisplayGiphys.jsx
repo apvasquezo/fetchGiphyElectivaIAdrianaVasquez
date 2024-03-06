@@ -9,15 +9,17 @@ const DisplayGiphys = ({ category }) => {
     const { loading, data } = useApi(url);
 
     return ( 
-        <div className='container'>
+        <div className='Container fluid'>
             <br></br>
+            <div className='col-md-4 mb-3'>
             {
                 loading ?
                     data.map(img => (
                         <ImageItem key={img.id} title={img.title} url={img.images.downsized_medium.url} />
                     ))
                 : ''
-            }
+            }              
+            </div>
         </div>
 
      );

@@ -21,7 +21,7 @@ const AddCategory = ({ setCategory }) => {
             <form onSubmit={ searchGif }>
             <div><center>
                 <input 
-                    className='rounded-pill'
+                    className='rounded'
                     type="text" 
                     placeholder='Search...' 
                     onChange={event => setValue(event.target.value)}
