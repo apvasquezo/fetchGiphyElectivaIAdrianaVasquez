@@ -2,9 +2,16 @@ import React from 'react';
 
 const ImageItem = ({ title, url }) => {
     return ( 
-        <div className='row border shadow'>
-            <img src={ url } alt={ title } className=''/>
-            <p>{ title }</p>
+        <div className='row m-.25'>
+            <div className='col'>
+                <img 
+                    src={url} 
+                    alt={title} 
+                    className='img-fluid rounded shadow mb-3' 
+                    style={{ width: '250px', height: '200px' }} 
+                />
+                <p className='text-center'>{ title }</p>
+            </div>
         </div>
     );
 }

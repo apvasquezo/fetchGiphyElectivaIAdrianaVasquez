@@ -29,8 +29,10 @@ const AddCategory = ({ setCategory }) => {
                 />
              </center></div>
             </form>
-            <div className='container'>
-                { error ? <p className='alert alert-info'>El campo no puede estar vacio...</p> : ""}
+            <div className='row justify-content-center'>
+                <div  style={{width: '300px'}}>   
+                    { error ? <p className='alert alert-info text-center mt-2 mb-0 ' role="alert">The field cannot be empty...</p> : ""}
+                </div>
             </div>
             
         </>
