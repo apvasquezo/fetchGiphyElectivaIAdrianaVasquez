@@ -5,17 +5,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const DisplayGiphys = ({ category }) => {
 
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=KGIlC1VrDB7B9VOKDpBXLDyZwSUM3oK6&q=${category}&limit=24`;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=KGIlC1VrDB7B9VOKDpBXLDyZwSUM3oK6&q=${category}`;
     const { loading, data } = useApi(url);
 
     return ( 
         <Container className='container-fluid'>
             <br />
             <div className='row mx-2'>
-                <div className='col-10'>
+                <div className='col-9'>
                 </div>
-                <div className='col-2'>
-                    <h3 className='text-danger text-right'>{ category.toUpperCase() } </h3>
+                <div className='col-3'>
+                    <h3 className='text-center text-danger'>{ category.toUpperCase() } </h3>
                 </div>
                 <hr style={{ height: '6px', backgroundColor: 'red' }}/>                            
             </div>
