@@ -10,7 +10,7 @@ const ImageItem = ({ title, url }) => {
                     className='img-fluid rounded shadow mb-3' 
                     style={{ width: '250px', height: '200px' }} 
                 />
-                <p className='text-center'>{ title }</p>
+                <p className='text-center bg-danger bg-gradient text-white'>{ title }</p>
             </div>
         </div>
     );

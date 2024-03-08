@@ -11,8 +11,16 @@ const DisplayGiphys = ({ category }) => {
     return ( 
         <Container className='container-fluid'>
             <br />
-            <h3>{ category.toUpperCase() } </h3>
-            <hr style={{ height: '5px', backgroundColor: 'violet' }}/>
+            <div className='row mx-2'>
+                <div className='col-10'>
+                </div>
+                <div className='col-2'>
+                    <h3 className='text-danger text-right'>{ category.toUpperCase() } </h3>
+                </div>
+                <hr style={{ height: '6px', backgroundColor: 'red' }}/>                            
+            </div>
+            
+
             <Row>
             {loading ? (
                     data.map(img => (
