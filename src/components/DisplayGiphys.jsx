@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const DisplayGiphys = ({ category }) => {
 
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=KGIlC1VrDB7B9VOKDpBXLDyZwSUM3oK6&q=${category}`;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=KGIlC1VrDB7B9VOKDpBXLDyZwSUM3oK6&q=${category}&limit=24`;
     const { loading, data } = useApi(url);
 
     return ( 
