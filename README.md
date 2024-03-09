@@ -19,4 +19,13 @@ buscar tanto en español como en inglés. Muestra los gifs en un grid de 4 colum
 
 git clone https://github.com/apvasquezo/fetchGiphyElectivaIAdrianaVasquez.git
 
-mpm init
+cd fetch_api_giphy
+
+npm install
+
+npm run start
+
+##### Tecnologias
+
+- ReactJs
+- Bootstrap
